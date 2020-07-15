@@ -1,0 +1,49 @@
+<html>
+    <head></head>
+
+<body>
+<script>
+    console.log('letsupgrade');
+/* log method is used to print the output to the console. 
+We can put any type inside the log(), be it a string, array, object, boolean etc.*/
+    console.error('debug your error in code');
+     /* error used to indicate error message to the console. Useful in testing of code.
+      By default the error message will be highlighted with red color.*/
+    console.warn('This is a warning');
+      /* Used to log warning message to the console.
+       By default the warning message will be highlighted with yellow color*/
+    console.clear();
+       /*Used to clear the console.*/
+       console.time('abc'); 
+ var do_it =  function(){ 
+     console.log('lets do'); 
+ } 
+ var  done= function(){ 
+     console.log('done.....'); 
+ } 
+ do_it(); 
+ done(); 
+console.timeEnd('abc');
+  /*Whenever we want to know the amount of time spend by a block or a function, 
+    we can make use of the time() and timeEnd() methods provided by the javascript console object. 
+    They take a label which must be same, and the code inside can be anything( function, object, simple console).*/ 
+
+     console.table({'a': 1,'b':2});
+/*This method allows us to generate a table inside a console. 
+The input must be an array or an object which will be shown as a table.*/
+
+for(let i=0;i<5;i++){ 
+    console.count(i); 
+} 
+/*This method is used to count the number that the function hit by this counting method.*/
+
+console.group('grp1'); 
+  console.error('error here'); 
+  console.log('this is group method'); 
+console.groupEnd('grp1'); 
+console.log('new grp');
+/*group() and groupEnd() methods of the console object allows us to group contents in a separate block,
+ which will be indented.*/
+</script>
+    </body>
+  </html>
