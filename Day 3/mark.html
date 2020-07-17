@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark</title>
+</head>
+<body>
+    <script>
+        var msg = 'enter the percentage of student:';
+var a = window.prompt(msg);
+if(a>85)
+   {
+      console.log('The mark is' +a+ ' Grade is A');
+   }
+else if(a<=85 && a>80)
+   {
+     console.log('The mark is ' +a+ ' Grade - A-');
+   }
+else if(a>70 && a<=80)
+    {
+     console.log('The mark is ' +a+ ' Grade - B');
+    }
+else if(a>60 && a<=70)
+    {
+     console.log('The mark is ' +a+ ' Grade - C');
+    }
+else if(a>40 && a<=60)
+    {
+      console.log('The mark is ' +a+ ' Grade - D');
+    }
+else if(a<=40)
+    {
+      if(a<=35)
+        {
+          console.log('The mark is ' +a+ 'Grade - E Candidate failed');
+        }
+      else
+        {
+            console.log('The mark is ' +a+ ' Grade - E');
+    }
+}
+    </script>
+</body>
+</html>
