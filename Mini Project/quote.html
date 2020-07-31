@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote</title>
+    <link rel="stylesheet" href="quote.css">
+</head>
+<body>
+    <h1>Quote</h1>
+    <div id="container">
+        <button id="btn">Click for Quotes</button>
+        <div id="content">Quotes will be displayed here</div>
+    </div>
+    <script>
+        let btn = document.getElementById('btn');
+let output = document.getElementById('content');
+let quotes = [
+'"Life is ours to be spent, not to be saved." -D. H. Lawrence',
+
+'"Life is a long lesson in humility." -James M. Barrie',
+
+'"In three words I can sum up everything I have learned about life: it goes on." -Robert Frost',
+
+'"Love the life you live. Live the life you love." -Bob Marley',
+
+'"Life is either a daring adventure or nothing at all." -Helen Keller',
+
+'"You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose." -Dr. Seuss',
+];
+
+btn.addEventListener('click', function () {
+    var randomQuote = quotes[Math.floor(Math.random() * (6 - 1)) + 1]
+    content.innerHTML = randomQuote;
+})
+    </script>
+</body>
+</html>

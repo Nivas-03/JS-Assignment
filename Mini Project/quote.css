@@ -1,0 +1,33 @@
+body {
+    background:whitesmoke;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#container {
+    background:transparent;
+    height: 250px;
+    width: 750px;
+    margin: auto;
+    text-align: center;
+    }
+
+h1 {
+    
+    color:black;
+}
+
+#btn {
+    margin: 50px auto;
+    height: 50px;
+    width: 300px;
+    font-size: 22px;
+    background:greenyellow;
+    border-radius: 5px;
+   }
+
+#content {
+    margin: 25px auto;
+    font-size: 22px;
+    color:black;
+}
